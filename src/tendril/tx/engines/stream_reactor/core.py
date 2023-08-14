@@ -61,6 +61,10 @@ class StreamReactor(service.Service, TwistedLoggerMixin):
 
         self._start_engine_tasks()
         self._start_monitoring_tasks()
+        self._start_application_tasks()
+
+    def _start_application_tasks(self):
+        pass
 
     def _start_engine_tasks(self):
         self.log.info("Starting Engine Tasks")

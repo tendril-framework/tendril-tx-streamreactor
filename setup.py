@@ -28,7 +28,9 @@ def read(fname):
     return content
 
 
-core_dependencies = []
+core_dependencies = [
+    'tendril-connector-rabbitmq',
+]
 
 install_requires = core_dependencies + ['wheel']
 
